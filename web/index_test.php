@@ -10,7 +10,8 @@ use Plume\Application;
 
 $app = new Application('test');
 $app['plume.root.path'] = __DIR__.'/../';
-// $app['plume.module.default']='example';
+$app['plume.module.default']='ugs';
+$app['plume.module.prefix']='ugs';// 指定默认模块
 // $app['plume.cache.request']=true;
 // $app['plume.cache.db']=true;
 $app->run();

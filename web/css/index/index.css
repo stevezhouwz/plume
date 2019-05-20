@@ -1,0 +1,27 @@
+@import "https://unpkg.com/element-ui/lib/theme-chalk/index.css";
+@import "/css/common/base.css";
+.baseContent {
+  padding: 60px 0 0 160px;
+  width: 100%;
+  background: #fff;
+}
+.baseContent footer {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.top {
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  line-height: 60px;
+  padding: 0px 28px;
+}
+.info {
+  padding: 10px 28px;
+  width: 100%;
+  text-align: center;
+}
+.el-input__suffix {
+  right: 10px;
+}

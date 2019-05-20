@@ -1,0 +1,4 @@
+/**
+ * Created by Musicbear on 2017/9/22.
+ */
+var addressConfig = 'http://www.baidu.com';

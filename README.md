@@ -1,10 +1,10 @@
-# plume-demo-web
+# plume-skeleton
 
-plume-demo-web 是 [plume](https://github.com/plumephp/plume) 项目的脚手架，它提供了plume默认的最佳实践，用来快速构建你的应用。
+Plume-skeleton 是 [plume](https://github.com/zhangbaitong/plume) 项目的脚手架，它提供了plume默认的最佳实践，用来快速构建你的应用。
 
 我们的目标是通过原生PHP构建一个轻巧、易用、可扩展、高性能的Web开发框架。
 
-详细文档请查看[docs](https://github.com/plumephp/docs)
+详细文档请查看[wiki](https://github.com/zhangbaitong/plume-skeleton/wiki)
 
 ## 功能特点
 
