@@ -5,6 +5,7 @@
       <path value="$PROJECT_DIR$/vendor/joshcam/mysqli-database-class" />
       <path value="$PROJECT_DIR$/vendor/plumephp/plume" />
       <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/aliyuncs/oss-sdk-php" />
     </include_path>
   </component>
   <component name="PhpUnit">
