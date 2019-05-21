@@ -92,7 +92,7 @@ Class Ossupload{
         $tmp = explode('/', $type);
         $type = $tmp[count($tmp) - 1];
         $filename = time().'@'.$name;
-        $obiect = self::module."/".self::env."/".$type.$filename;
+        $obiect = self::module."/".self::env."/".$type.'/'.$filename;
         $filePath = $filePath;
 
         try{
