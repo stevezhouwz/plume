@@ -4,8 +4,10 @@ namespace Oss\Controller;
 
 use OSS\Core\OssException;
 use OSS\OssClient;
+use Oss\Utils\AipSpeech;
 use Plume\Core\Controller;
 use Oss\Utils\Ossupload;
+
 
 class IndexController extends Controller
 {
@@ -39,6 +41,7 @@ class IndexController extends Controller
     }
     public function uploadAction(){
         $this->api();
+        print_r($_FILES);die;
         if(!$_FILES['file']){
             $res = array(
                 'result' => 1009,
@@ -55,5 +58,34 @@ class IndexController extends Controller
 //        print_r($oss->getOssClient());die;
         $res = $oss->uploadFile($name,$filePath,$type);
         return $this->result(array('data'=>$res))->json()->response();
+    }
+
+
+    public function audioAction(){
+
+    }
+
+    public function audioPostAction(){
+        $this->api();
+
+        $APP_ID = '16368044';
+        $API_KEY = 'YG8mgG7kez73LGnpFkjiStTS';
+        $SECRET_KEY = 'tjLxhVXYWdzGzHgUWXTIcq0ft6rv120V';
+        $file = $_FILES['file'];
+//        print_r($file);die;
+        $filename = $file['name'];
+        $path = $file['tmp_name'];
+        $client = new AipSpeech($APP_ID, $API_KEY, $SECRET_KEY);
+
+        $res = $client->asr(file_get_contents($path), 'wav', 16000, array(
+            'dev_pid' => 1536,
+        ));
+
+        if($res['err_no'] == 0){
+            $data = isset($res['result'][0])?$res['result'][0]:"";
+            return $this->result(array('data'=>$data))->json()->response();
+        }else{
+            return $this->result(array('data'=>''))->json()->response();
+        }
     }
 }
