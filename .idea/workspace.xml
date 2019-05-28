@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18a9a6a7-fbed-4044-bb46-a0fc2ec9877f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Oss/Controller/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/View/index/index.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Oss/View/index/index.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/deploy/index-component-define.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/deploy/index-data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/deploy/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/deploy/myselect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/mobile/detail.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/mobile/explain.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/mobile/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/rulebases/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/View/index/audio.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Oss/View/index/audio.phtml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +18,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/Oss/Controller/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="568">
@@ -40,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/Oss/View/index/audio.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="151" column="44" lean-forward="true" selection-start-line="151" selection-start-column="44" selection-end-line="151" selection-end-column="44" />
+            <state relative-caret-position="116">
+              <caret line="57" column="24" lean-forward="true" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -143,8 +133,8 @@
         <option value="$PROJECT_DIR$/modules/Oss/Utils/AipHttpClient.php" />
         <option value="$PROJECT_DIR$/modules/Oss/Utils/AipImageUtil.php" />
         <option value="$PROJECT_DIR$/modules/Oss/Utils/AipSpeech.php" />
-        <option value="$PROJECT_DIR$/modules/Oss/View/index/audio.phtml" />
         <option value="$PROJECT_DIR$/modules/Oss/Controller/IndexController.php" />
+        <option value="$PROJECT_DIR$/modules/Oss/View/index/audio.phtml" />
       </list>
     </option>
   </component>
@@ -206,13 +196,6 @@
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="Oss" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plume" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Oss" type="462c0819:PsiDirectoryNode" />
-              <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="plume" type="b2602c69:ProjectViewProjectNode" />
@@ -289,12 +272,12 @@
       <workItem from="1558428690684" duration="1169000" />
       <workItem from="1558431264313" duration="1607000" />
       <workItem from="1559025583818" duration="703000" />
-      <workItem from="1559026345228" duration="2230000" />
+      <workItem from="1559026345228" duration="2428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12520000" />
+    <option name="totallyTimeSpent" value="12718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="6" />
@@ -485,13 +468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Oss/View/index/audio.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="151" column="44" lean-forward="true" selection-start-line="151" selection-start-column="44" selection-end-line="151" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Oss/Controller/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="568">
@@ -499,6 +475,13 @@
           <folding>
             <element signature="e#34#60#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Oss/View/index/audio.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="57" column="24" lean-forward="true" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
         </state>
       </provider>
     </entry>
