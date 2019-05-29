@@ -155,10 +155,10 @@ function sendvoice($secretKey, $SecretId, $EngSerViceType, $SourceType, $URI, $V
     //echo "ret : ".$ret."\n";
     //echo "http_code : ".$http_code."\n";
     //echo "rsp_str : ".$rsp_str."\n";
-    echo $rsp_str . "\n";
+   // echo $rsp_str . "\n";
     $endtime = time();
     $cost = $endtime - $starttime;
     //echo "cost time: ".$cost."\n";
-    return 0;
+    return $rsp_str;
 }
 

@@ -100,13 +100,15 @@ class IndexController extends Controller
 //        $filename = $file['name'];
         $file = $_FILES['file'];
         $URI = $file['tmp_name'];
-       // $URI = 'http://nhds.oss-cn-hangzhou.aliyuncs.com/picture-wall/audio/kaimushi/test_15156235.mp3';
+//        $URI = 'http://nhds.oss-cn-hangzhou.aliyuncs.com/picture-wall/audio/kaimushi/test_15156235.mp3';
 
         // 音频格式 mp3 or wav
         $VoiceFormat = 'mp3';
         //调用SASRsdk中的sendvoice函数获得识别结果
         $res = sendvoice($secretKey, $SecretId, $EngSerViceType, $SourceType, $URI, $VoiceFormat);
-        print_r($res);die;
+        $data = json_decode($res,true);
+        $text = isset($data['Response']['Result'])?$data['Response']['Result']:"";
+        return $this->result(array('text'=>$text))->json()->response();
     }
 
     public function backAction(){
