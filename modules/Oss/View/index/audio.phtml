@@ -40,22 +40,141 @@
 <script src="/js/index/ios-weixin-config.js"></script>
 <script src="/js/index/app.js"></script>
 <script>
-    RecordApp.RequestPermission(function(){
-        RecordApp.Start({},function(){//使用默认配置开始录音，mp3格式
-            setTimeout(function(){
-                RecordApp.Stop(function(blob,duration){//到达指定条件停止录音
-                    console.log(URL.createObjectURL(blob),"时长:"+duration+"ms");
-
-                    //已经拿到blob文件对象想干嘛就干嘛：立即播放、上传
-                },function(msg){
-                    console.log("录音失败:"+msg);
-                });
-            },3000);
-        },function(msg){
-            console.log("开始录音失败："+msg);
+    (function(){
+      //立即加载环境，自动把Recorder加载进来
+        RecordApp.Install(function(){
+            console.log("RecordApp.Install成功");
+            isInstall=true;
+            window.onInstall&&onInstall();
+        },function(err){
+            var msg="RecordApp.Install出错："+err;
+            console.log(msg);
+            alert(msg);
         });
-    },function(msg,isUserNotAllow){//用户拒绝未授权或不支持
-        console.log((isUserNotAllow?"UserNotAllow，":"")+"无法录音:"+msg);
-    });
+
+    })();
+    var isInstall=false;
+    var audio = new audioEvent();
+    audio.init();
+    function audioEvent() {
+        var self = this;
+        self.status = 1;//录制状态：1：未开始；2：开始
+        self.hour = 0;//时
+        self.minute = 0;//分
+        self.second = 0;//秒
+        self.timer; //定时器
+        self.time = "00:00:00";
+        self.audio;
+        self.init = function () {
+            self.open();
+            self.event();
+        };
+        self.event = function(){
+            $('.start-btn').click(self.start);
+            $('.cancel').click(self.cancel);
+        };
+        self.open = function(){
+
+            RecordApp.RequestPermission(function () {
+
+            });
+        };
+        self.start = function () {
+            if(self.status == 1){
+                var set={
+                    type:'wav'
+                };
+                RecordApp.Start(set,function () {
+       
+                });
+                self.change('结束录音',2);
+                self.status = 2;//修改录音状态
+                self.startTime();
+
+            }else if(self.status == 2){
+                //停止录制
+                self.clear();
+                self.change('播放录音',1);
+                RecordApp.Stop(function(blob,duration){
+                    console.log(URL.createObjectURL(blob));
+
+                    self.audio=document.createElement("audio");
+                    self.audio.controls=true;
+                    $('.time-content').append(self.audio);
+
+                    self.audio.src=URL.createObjectURL(blob);
+                    self.status = 3;
+                    self.send(blob);
+                })
+            }else if(self.status == 3){
+                self.audio.play();
+            }
+        };
+        self.change = function (text,type) {
+            var obj = $('.start-btn');
+            obj.text(text);
+            if(type == 1){
+                obj.css("background","#54b73a");
+            }else if(type == 2){
+                obj.css("background","#f54343");
+            }else {
+                obj.css("background","#bababa");
+            }
+        };
+        self.clear = function () {
+            window.clearInterval(self.timer);
+            self.hour = 0;//时
+            self.minute = 0;//分
+            self.second = 0;//秒
+        };
+        self.startTime = function () {
+            self.timer = setInterval(self.time,1000);
+        };
+        self.time = function () {
+            self.second++;
+            if(self.second >= 60){
+                self.second = 0;
+                self.minute++;
+            }
+            if(self.minute >= 60)
+            {
+                minute=0;
+                self.hour++;
+            }
+            self.time = self.isjoin(self.hour)+":"+self.isjoin(self.minute)+":"+self.isjoin(self.second);
+            $(".time").text(self.time);
+        };
+        self.isjoin = function (t) {
+            return t < 10 ? "0" + t : t;
+        };
+        self.cancel = function () {
+            self.status = 1;
+            self.time = "00:00:00";
+            $('audio').remove();
+            $(".time").text(self.time);
+            self.change('开始录音',1);
+        };
+        self.send = function (blob) {
+            var form=new FormData();
+            form.append("file",blob,"recorder.mp3");
+            console.log(blob);
+            var form=new FormData();
+            form.append("file",blob,"recorder.mp3");
+            $.ajax({
+                url:'/oss/index/audioPost' //上传接口地址
+                ,type:"POST"
+                ,contentType:false //让xhr自动处理Content-Type header，multipart/form-data需要生成随机的boundary
+                ,processData:false //不要处理data，让xhr自动处理
+                ,data:form
+                ,success:function(ret){
+                    console.log('识别成功',ret);
+                    $(".shibie").text(ret.data);
+                }
+                ,error:function(s){
+                    console.error("上传失败",s);
+                }
+            });
+        }
+    }
 </script>
 </html>
