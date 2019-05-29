@@ -8,6 +8,7 @@ use Oss\Utils\AipSpeech;
 use Plume\Core\Controller;
 use Oss\Utils\Ossupload;
 
+require('SASRsdk.php');
 
 class IndexController extends Controller
 {
@@ -68,24 +69,45 @@ class IndexController extends Controller
     public function audioPostAction(){
         $this->api();
 
-        $APP_ID = '16368044';
-        $API_KEY = 'YG8mgG7kez73LGnpFkjiStTS';
-        $SECRET_KEY = 'tjLxhVXYWdzGzHgUWXTIcq0ft6rv120V';
+//        $APP_ID = '16368044';
+//        $API_KEY = 'YG8mgG7kez73LGnpFkjiStTS';
+//        $SECRET_KEY = 'tjLxhVXYWdzGzHgUWXTIcq0ft6rv120V';
+//        $file = $_FILES['file'];
+////        print_r($file);die;
+//        $filename = $file['name'];
+//        $path = $file['tmp_name'];
+//        $client = new AipSpeech($APP_ID, $API_KEY, $SECRET_KEY);
+//
+//        $res = $client->asr(file_get_contents($path), 'wav', 16000, array(
+//            'dev_pid' => 1536,
+//        ));
+//
+//        if($res['err_no'] == 0){
+//            $data = isset($res['result'][0])?$res['result'][0]:"";
+//            return $this->result(array('data'=>$data))->json()->response();
+//        }else{
+//            return $this->result(array('data'=>''))->json()->response();
+//        }
+        $secretKey = 'wmMDqIaeT6aYZv481g9PpJQTSLi1AOUQ';
+        $SecretId = 'AKIDpSq2B114JIcinfwbFfo1C85KYkrNtCXe';
+        // 识别引擎 8k or 16k
+        $EngSerViceType = '16k';
+        // 语音数据来源 0:语音url，1:语音数据bodydata
+        $SourceType = 1;
+        // 语音数据地址
+//        $URI = 'iflytek01.wav';
+//        $URI='http://liqiansunvoice-1255628450.cosgz.myqcloud.com/30s.wav';
+//        $filename = $file['name'];
         $file = $_FILES['file'];
-//        print_r($file);die;
-        $filename = $file['name'];
-        $path = $file['tmp_name'];
-        $client = new AipSpeech($APP_ID, $API_KEY, $SECRET_KEY);
+        $URI = $file['tmp_name'];
+        // 音频格式 mp3 or wav
+        $VoiceFormat = 'mp3';
+        //调用SASRsdk中的sendvoice函数获得识别结果
+        sendvoice($secretKey, $SecretId, $EngSerViceType, $SourceType, $URI, $VoiceFormat);
 
-        $res = $client->asr(file_get_contents($path), 'wav', 16000, array(
-            'dev_pid' => 1536,
-        ));
+    }
 
-        if($res['err_no'] == 0){
-            $data = isset($res['result'][0])?$res['result'][0]:"";
-            return $this->result(array('data'=>$data))->json()->response();
-        }else{
-            return $this->result(array('data'=>''))->json()->response();
-        }
+    public function backAction(){
+
     }
 }

@@ -1,7 +1,8 @@
 {
   "require": {
     "plumephp/plume": "dev-master",
-    "aliyuncs/oss-sdk-php": "~2.0"
+    "aliyuncs/oss-sdk-php": "~2.0",
+    "tencentcloud/tencentcloud-sdk-php": "3.0.6"
   },
   "autoload": {
     "psr-4": {
