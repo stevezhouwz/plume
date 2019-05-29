@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "480e7e3a85d3f6323112bb45b2b65492",
@@ -304,6 +304,9 @@
                 "BSD-2-Clause"
             ],
             "description": "A micro framework for PHP.",
+<<<<<<< HEAD
+            "time": "2019-02-20 07:56:41"
+=======
             "time": "2019-02-20T07:56:41+00:00"
         },
         {
@@ -399,6 +402,7 @@
             "description": "TencentCloudApi php sdk",
             "homepage": "https://github.com/TencentCloud/tencentcloud-sdk-php",
             "time": "2018-05-31T13:01:55+00:00"
+>>>>>>> 522d69235e5a6566e8092c4a98086ed9539e7ee2
         }
     ],
     "packages-dev": [],
