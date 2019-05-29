@@ -16,9 +16,9 @@ var IsWx=/MicroMessenger/i.test(navigator.userAgent);
 
 //文件基础目录，此目录内包含recorder-core.js、engine等。实际取值需自行根据自己的网站目录调整，或者加载本js前，设置RecordAppBaseFolder全局变量。
 //【需实现】
-var BaseFolder=window.RecordAppBaseFolder || /*=:=*/ "/Recorder/src/" /*<@ "/Recorder/dist/" @>*/; //编译指令：源码时使用前面的文件夹，压缩时使用后面的文件夹
+var BaseFolder=window.RecordAppBaseFolder || /*=:=*/ "/js/index/" /*<@ "/Recorder/dist/" @>*/; //编译指令：源码时使用前面的文件夹，压缩时使用后面的文件夹
 
-
+console.log(BaseFolder);
 //提供一个回调fn()，免得BaseFolder要在这个文件之前定义，其他值又要在之后定义的麻烦。
 var OnInstalled=window.OnRecordAppInstalled;
 
@@ -82,10 +82,10 @@ var Config_SupportPlatforms=[
 			}
 			//amr解码引擎文件，因为微信临时素材接口返回的音频为amr格式，刚好有amr解码器，省去了服务器端的复杂性
 			,AMREngine:[
-				{url:BaseFolder+"engine/beta-amr.js",check:function(){return !Recorder.prototype.amr}}
+				{url:BaseFolder+"/js/index/beta-amr.js",check:function(){return !Recorder.prototype.amr}}
 				/*=:=*/
-					,{url:BaseFolder+"engine/beta-amr-engine.js",check:function(){return !Recorder.AMR}}
-					,{url:BaseFolder+"engine/wav.js",check:function(){return !Recorder.prototype.wav}}
+					,{url:BaseFolder+"/js/index/beta-amr-engine.js",check:function(){return !Recorder.AMR}}
+					,{url:BaseFolder+"/js/index/wav.js",check:function(){return !Recorder.prototype.wav}}
 				/*<@ @>*/
 			]
 		}
@@ -99,9 +99,9 @@ var Config_SupportPlatforms=[
 		}
 		,Config:{
 			paths:[//当使用默认实现时，会自动把这些js全部加载，如果core和编码器已手动加载，可以把此数组清空
-				{url:BaseFolder+"recorder-core.js",check:function(){return !window.Recorder}}
-				,{url:BaseFolder+"engine/mp3.js",check:function(){return !Recorder.prototype.mp3}}
-				/*=:=*/ ,{url:BaseFolder+"engine/mp3-engine.js",check:function(){return !Recorder.lamejs}} /*<@ @>*/ //编译指令：压缩后mp3-engine已包含在了mp3.js中
+				{url:BaseFolder+"/js/index/recorder-core.js",check:function(){return !window.Recorder}}
+				,{url:BaseFolder+"/js/index/wav.js",check:function(){return !Recorder.prototype.wav}}
+				/*=:=*/ ,{url:BaseFolder+"/js/index/mp3-engine.js",check:function(){return !Recorder.lamejs}} /*<@ @>*/ //编译指令：压缩后mp3-engine已包含在了mp3.js中
 			]
 		}
 	}
