@@ -99,14 +99,15 @@ class AudioController extends Controller
 
     public function indexAction(){
         $this->api();
-
         $accessKeyId = "LTAIQqL13WHU9JkA";
         $accessKeySecret = "Iiqj2kANqCY9lo7QGAZb4Emp0vWKfB";
         $appKey = "KwRKmbtdBB0JM9r3";
-        //$fileLink = "http://nhds.oss-cn-hangzhou.aliyuncs.com/picture-wall/audio/kaimushi/test_94044909.wav";
+//        $fileLink = "http://nhds.oss-cn-hangzhou.aliyuncs.com/picture-wall/audio/kaimushi/test_81429855.mp3";
         $file = $_FILES['file'];
-        $fileLink = $file['tmp_name'];
 
+        $filename = time () . '@' . ".mp3";
+        move_uploaded_file ( $file["tmp_name"],  $_SERVER ['DOCUMENT_ROOT'] . "/upload/mp3/" . $filename );
+        $fileLink = $_SERVER['HTTP_HOST'] . "/upload/mp3/" . $filename;
         AlibabaCloud::accessKeyClient($accessKeyId, $accessKeySecret)
             ->regionId("cn-shanghai")
             ->asGlobalClient();
@@ -122,7 +123,7 @@ class AudioController extends Controller
         }else{
             $text = "您说什么我听不清楚";
         }
-        $this->log("请求",['path'=>$fileLink]);
+
        return $this->result(array('text'=>$text))->json()->response();
     }
 
