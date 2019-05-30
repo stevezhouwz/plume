@@ -107,7 +107,7 @@ class AudioController extends Controller
 
         $filename = time () . '@' . ".mp3";
         move_uploaded_file ( $file["tmp_name"],  $_SERVER ['DOCUMENT_ROOT'] . "/upload/mp3/" . $filename );
-        $fileLink = $_SERVER['HTTP_HOST'] . "/upload/mp3/" . $filename;
+        $fileLink ="https://". $_SERVER['HTTP_HOST'] . "/upload/mp3/" . $filename;
         AlibabaCloud::accessKeyClient($accessKeyId, $accessKeySecret)
             ->regionId("cn-shanghai")
             ->asGlobalClient();
