@@ -17,7 +17,7 @@ class AudioController extends Controller
 {
 
     // 请求参数key
-     const KEY_APP_KEY = "KwRKmbtdBB0JM9r3";
+     const KEY_APP_KEY = "appkey";
      const KEY_FILE_LINK = "file_link";
      const KEY_VERSION = "version";
      const KEY_ENABLE_WORDS = "enable_words";
@@ -37,7 +37,7 @@ class AudioController extends Controller
         // 设置是否输出词信息，默认为false，开启时需要设置version为4.0
         $taskArr = array(self::KEY_APP_KEY => $appKey, self::KEY_FILE_LINK => $fileLink, self::KEY_VERSION => "4.0", self::KEY_ENABLE_WORDS => FALSE);
         $task = json_encode($taskArr);
-        print $task . "\n";
+
         try {
             // 提交请求，返回服务端的响应
             $submitTaskResponse = AlibabaCloud::nlsFiletrans()
@@ -45,7 +45,7 @@ class AudioController extends Controller
                 ->submitTask()
                 ->withTask($task)
                 ->request();
-            print $submitTaskResponse . "\n";
+
             // 获取录音文件识别请求任务的ID，以供识别结果查询使用
             $taskId = NULL;
             $statusText = $submitTaskResponse[self::KEY_STATUS_TEXT];
@@ -73,7 +73,7 @@ class AudioController extends Controller
                     ->getTaskResult()
                     ->withTaskId($taskId)
                     ->request();
-                print "识别查询结果: " . $getResultResponse . "\n";
+
                 $statusText = $getResultResponse[self::KEY_STATUS_TEXT];
                 if (strcmp(self::STATUS_RUNNING, $statusText) == 0 || strcmp(self::STATUS_QUEUEING, $statusText) == 0) {
                     // 继续轮询
@@ -99,23 +99,31 @@ class AudioController extends Controller
 
     public function indexAction(){
         $this->api();
+
         $accessKeyId = "LTAIQqL13WHU9JkA";
         $accessKeySecret = "Iiqj2kANqCY9lo7QGAZb4Emp0vWKfB";
-        $appKey = self::KEY_APP_KEY;
-        $fileLink = "http://nhds.oss-cn-hangzhou.aliyuncs.com/picture-wall/audio/kaimushi/test_94044909.wav";
+        $appKey = "KwRKmbtdBB0JM9r3";
+        //$fileLink = "http://nhds.oss-cn-hangzhou.aliyuncs.com/picture-wall/audio/kaimushi/test_94044909.wav";
+        $file = $_FILES['file'];
+        $fileLink = $file['tmp_name'];
 
         AlibabaCloud::accessKeyClient($accessKeyId, $accessKeySecret)
             ->regionId("cn-shanghai")
             ->asGlobalClient();
 
-
+        $this->log("请求",['path'=>$fileLink]);
         $taskId = $this->submitFileTransRequest($appKey, $fileLink);
+        $this->log("请求taskId",['taskId'=>$taskId]);
         if($taskId){
-            print "录音文件识别请求成功，task_id: " . $taskId . "\n";
             $result = $this->getFileTransResult($taskId);
-            print_r($result);die;
+            $this->log("请求result",['result'=>$result]);
+            $result = json_decode($result,true);
+            $text = isset($result['Result']['Sentences'][0]['Text'])?$result['Result']['Sentences'][0]['Text']:"您说什么我听不清楚";
+        }else{
+            $text = "您说什么我听不清楚";
         }
-        die;
+        $this->log("请求",['path'=>$fileLink]);
+       return $this->result(array('text'=>$text))->json()->response();
     }
 
 
