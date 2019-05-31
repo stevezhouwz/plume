@@ -40,7 +40,7 @@ class TextController extends Controller
 
             $resp = $client->TextToVoice($req);
             $bae64 = json_decode($resp->toJsonString(),true);
-            $src = "data:audio/wav;base64,".$bae64['Audio'];
+            $src = "data:audio/mp3;base64,".$bae64['Audio'];
             return $this->result(array('src'=>$src))->response();
         }catch (TencentCloudSDKException $e){
             echo $e;
@@ -75,7 +75,7 @@ class TextController extends Controller
 
             $resp = $client->TextToVoice($req);
             $bae64 = json_decode($resp->toJsonString(),true);
-            $src = "data:audio/wav;base64,".$bae64['Audio'];
+            $src = "data:audio/mp3;base64,".$bae64['Audio'];
             return $this->result(array('src'=>$src))->json()->response();
         }catch (TencentCloudSDKException $e){
             echo $e;

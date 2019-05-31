@@ -2,42 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d24deb3b-2dab-4ed4-9b62-0dfce40cc038" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/dev.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/dev.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/code.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Controller/AudioController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Controller/IndexController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Controller/SASRsdk.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Dao/BaseDao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Service/BaseService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Service/DeployService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Service/IndexService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/AipBCEUtil.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/AipBase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/AipHttpClient.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/AipImageUtil.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/AipSpeech.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/Config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/DownloadUtils.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/KeyUtils.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/Ossupload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/Page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/b94752ba7d7f55e2e7ca81d9c9701f99" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/View/index/audio.phtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/View/index/audio.phtml.bal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/View/index/index.phtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/View/layout/footer.phtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/View/layout/layoutM.phtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Oss/View/layout/layoutP.phtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/sql/growth_db.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index_dev.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_dev.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/upload/mp3/1559206438@.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/App/Controller/TextController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/App/Controller/TextController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/App/Controller/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="140">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#34#60#0#PHP" expanded="true" />
               </folding>
@@ -65,7 +31,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/App/Controller/SASRsdk.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
+            <state relative-caret-position="2240">
               <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
             </state>
           </provider>
@@ -74,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/App/Controller/AudioController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
+            <state relative-caret-position="2548">
               <caret line="94" column="24" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
               <folding>
                 <element signature="e#34#71#0#PHP" expanded="true" />
@@ -83,20 +49,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" selection-start-column="9" selection-end-column="9" />
+            <state relative-caret-position="84">
+              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/App/Controller/TextController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="461">
+              <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -132,10 +98,10 @@
         <option value="$PROJECT_DIR$/modules/App/View/index/audio.phtml.bal" />
         <option value="$PROJECT_DIR$/modules/App/View/index/index.phtml" />
         <option value="$PROJECT_DIR$/modules/App/Utils/Ossupload.php" />
-        <option value="$PROJECT_DIR$/modules/App/Controller/TextController.php" />
         <option value="$PROJECT_DIR$/modules/App/Controller/AudioController.php" />
         <option value="$PROJECT_DIR$/modules/App/Controller/IndexController.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/modules/App/Controller/TextController.php" />
       </list>
     </option>
   </component>
@@ -173,7 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,10 +146,29 @@
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -231,18 +215,20 @@
       <workItem from="1559275979093" duration="4000" />
       <workItem from="1559282603131" duration="4256000" />
       <workItem from="1559288109867" duration="184000" />
-      <workItem from="1559288357287" duration="2401000" />
+      <workItem from="1559288357287" duration="2524000" />
+      <workItem from="1559291261595" duration="114000" />
+      <workItem from="1559294559088" duration="80000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8615000" />
+    <option name="totallyTimeSpent" value="8932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25894135" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26609442" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -340,9 +326,7 @@
     <entry file="file://$PROJECT_DIR$/modules/App/Utils/b94752ba7d7f55e2e7ca81d9c9701f99">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/App/Utils/DownloadUtils.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/Utils/DownloadUtils.php" />
     <entry file="file://$PROJECT_DIR$/modules/App/Utils/Config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -350,13 +334,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/App/Utils/Page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/Utils/Page.php" />
     <entry file="file://$PROJECT_DIR$/modules/App/Utils/AipBCEUtil.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -405,33 +383,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/App/Controller/TextController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/App/Controller/SASRsdk.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/App/Controller/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="140">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#34#60#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/Controller/SASRsdk.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2240">
+          <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/App/Controller/AudioController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
+        <state relative-caret-position="2548">
           <caret line="94" column="24" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
           <folding>
             <element signature="e#34#71#0#PHP" expanded="true" />
@@ -441,8 +412,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        <state relative-caret-position="84">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/Controller/TextController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
         </state>
       </provider>
     </entry>
