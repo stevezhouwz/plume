@@ -23,7 +23,7 @@ class TextController extends Controller
      * @return mixed
      */
     public function indexAction(){
-
+        $text = isset($_REQUEST['text'])?$_REQUEST['text']:"哈哈哈哈哈哈哈，终于实现了";
         try{
             $cred = new Credential("AKIDpSq2B114JIcinfwbFfo1C85KYkrNtCXe", "wmMDqIaeT6aYZv481g9PpJQTSLi1AOUQ");
             $httpProfile = new HttpProfile();
@@ -35,7 +35,7 @@ class TextController extends Controller
 
             $req = new TextToVoiceRequest();
 
-            $params = '{"Text":"哈哈哈哈哈哈哈，终于实现了","SessionId":"SessionId-123","ModelType":1}';
+            $params = '{"Text":"'.$text.'","SessionId":"SessionId-123","ModelType":1}';
             $req->fromJsonString($params);
 
             $resp = $client->TextToVoice($req);
