@@ -1,8 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18a9a6a7-fbed-4044-bb46-a0fc2ec9877f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/modules/Oss/Controller/AudioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Oss/Controller/AudioController.php" afterDir="false" />
+    <list default="true" id="d24deb3b-2dab-4ed4-9b62-0dfce40cc038" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/dev.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/dev.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/code.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Controller/AudioController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Controller/IndexController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Controller/SASRsdk.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Dao/BaseDao.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Service/BaseService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Service/DeployService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Service/IndexService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/AipBCEUtil.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/AipBase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/AipHttpClient.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/AipImageUtil.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/AipSpeech.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/Config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/DownloadUtils.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/KeyUtils.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/Ossupload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/Page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/Utils/b94752ba7d7f55e2e7ca81d9c9701f99" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/View/index/audio.phtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/View/index/audio.phtml.bal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/View/index/index.phtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/View/layout/footer.phtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/View/layout/layoutM.phtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Oss/View/layout/layoutP.phtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/sql/growth_db.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_dev.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_dev.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upload/mp3/1559206438@.mp3" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,16 +48,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
-  <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Oss/Controller/IndexController.php">
+        <entry file="file://$PROJECT_DIR$/modules/App/Controller/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="100" selection-start-line="100" selection-end-line="101" selection-end-column="33" />
+            <state relative-caret-position="252">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#34#60#0#PHP" expanded="true" />
               </folding>
@@ -30,11 +62,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/Oss/Controller/AudioController.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/App/Controller/SASRsdk.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="109" column="30" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+            <state relative-caret-position="229">
+              <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/App/Controller/AudioController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="94" column="24" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
               <folding>
                 <element signature="e#34#71#0#PHP" expanded="true" />
               </folding>
@@ -42,68 +83,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Oss/View/layout/layoutP.phtml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-847" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Oss/View/layout/layoutM.phtml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/var/logs/2019-05-30/Oss-Audio-indexAction.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="10" column="79" lean-forward="true" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
+            <state>
+              <caret column="9" selection-start-column="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/alibabacloud/client/src/Request/Request.php">
+        <entry file="file://$PROJECT_DIR$/modules/App/Controller/TextController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1966">
-              <caret line="332" column="20" selection-start-line="332" selection-start-column="20" selection-end-line="332" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/alibabacloud/sdk/src/IdeHelper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2688">
-              <caret line="96" column="3" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/alibabacloud/client/src/AlibabaCloud.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Oss/Utils/Config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="20" />
+            <state relative-caret-position="381">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -112,22 +105,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>git_record</find>
-      <find>wav</find>
-      <find>MyWxApi</find>
-      <find>recorder-core.js</find>
-      <find>Js</find>
-      <find>BaseFolder</find>
-      <find>本网站正在使用RecordApp测试配置例子，正式使用时需要改动哦</find>
-      <find>RequestPermission</find>
-      <find>success()</find>
-      <find>NLSFileTrans</find>
-      <find>enable_words</find>
-      <find>token</find>
+      <find>DescribeZones</find>
+      <find>Ossupload</find>
+      <find>upload</find>
+      <find>Oss</find>
+      <find>AipSpeech</find>
     </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -135,61 +118,48 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/modules/Application/Controller/IndexController.php" />
-        <option value="$PROJECT_DIR$/modules/Application/Dao/UserInfoDao.php" />
-        <option value="$PROJECT_DIR$/modules/Application/Service/UserInfoService.php" />
-        <option value="$PROJECT_DIR$/config/dev.php" />
-        <option value="$PROJECT_DIR$/modules/Ugs/Service/IndexService.php" />
-        <option value="$PROJECT_DIR$/modules/Ugs/View/index/index.phtml" />
-        <option value="$PROJECT_DIR$/modules/Ugs/Controller/IndexController.php" />
         <option value="$PROJECT_DIR$/web/index_dev.php" />
-        <option value="$PROJECT_DIR$/modules/Oss/Utils/Ossupload.php" />
-        <option value="$PROJECT_DIR$/modules/Oss/View/index/index.phtml" />
-        <option value="$PROJECT_DIR$/modules/Oss/Utils/AipBase.php" />
-        <option value="$PROJECT_DIR$/modules/Oss/Utils/AipBCEUtil.php" />
-        <option value="$PROJECT_DIR$/modules/Oss/Utils/AipHttpClient.php" />
-        <option value="$PROJECT_DIR$/modules/Oss/Utils/AipImageUtil.php" />
-        <option value="$PROJECT_DIR$/modules/Oss/Utils/AipSpeech.php" />
-        <option value="$PROJECT_DIR$/web/js/index/recorder-core.js" />
-        <option value="$PROJECT_DIR$/web/js/index/ios-weixin-config.js" />
-        <option value="$PROJECT_DIR$/modules/Oss/View/index/audio.phtml" />
-        <option value="$PROJECT_DIR$/web/js/index/app.js" />
-        <option value="$PROJECT_DIR$/modules/Oss/Utils/SASRsdk.php" />
-        <option value="$PROJECT_DIR$/modules/Oss/Controller/SASRsdk.php" />
-        <option value="$PROJECT_DIR$/modules/Oss/Controller/IndexController.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/modules/Oss/Controller/AudioController.php" />
+        <option value="$PROJECT_DIR$/modules/App/Controller/SASRsdk.php" />
+        <option value="$PROJECT_DIR$/modules/App/Utils/AipBase.php" />
+        <option value="$PROJECT_DIR$/modules/App/Utils/AipBCEUtil.php" />
+        <option value="$PROJECT_DIR$/modules/App/Utils/AipHttpClient.php" />
+        <option value="$PROJECT_DIR$/modules/App/Utils/AipImageUtil.php" />
+        <option value="$PROJECT_DIR$/modules/App/Utils/AipSpeech.php" />
+        <option value="$PROJECT_DIR$/modules/App/Utils/Config.php" />
+        <option value="$PROJECT_DIR$/modules/App/Utils/Page.php" />
+        <option value="$PROJECT_DIR$/modules/App/View/index/audio.phtml" />
+        <option value="$PROJECT_DIR$/modules/App/View/index/audio.phtml.bal" />
+        <option value="$PROJECT_DIR$/modules/App/View/index/index.phtml" />
+        <option value="$PROJECT_DIR$/modules/App/Utils/Ossupload.php" />
+        <option value="$PROJECT_DIR$/modules/App/Controller/TextController.php" />
+        <option value="$PROJECT_DIR$/modules/App/Controller/AudioController.php" />
+        <option value="$PROJECT_DIR$/modules/App/Controller/IndexController.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpTemplates">
-    <option name="NEW_PHP_FILE_LAST_EXTENSION" value="phtml" />
-  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
-      <path value="$PROJECT_DIR$/vendor/joshcam/mysqli-database-class" />
       <path value="$PROJECT_DIR$/vendor/plumephp/plume" />
+      <path value="$PROJECT_DIR$/vendor/joshcam/mysqli-database-class" />
       <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/aliyuncs/oss-sdk-php" />
-      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
-      <path value="$PROJECT_DIR$/vendor/danielstjules/stringy" />
-      <path value="$PROJECT_DIR$/vendor/alibabacloud/sdk" />
-      <path value="$PROJECT_DIR$/vendor/alibabacloud/client" />
-      <path value="$PROJECT_DIR$/vendor/clagiordano/weblibs-configmanager" />
-      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
-      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
-      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
-      <path value="$PROJECT_DIR$/vendor/moontoast/math" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/adbario/php-dot-notation" />
-      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
-      <path value="$PROJECT_DIR$/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/aliyuncs/oss-sdk-php" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
+      <path value="$PROJECT_DIR$/vendor/clagiordano/weblibs-configmanager" />
+      <path value="$PROJECT_DIR$/vendor/alibabacloud/client" />
+      <path value="$PROJECT_DIR$/vendor/alibabacloud/sdk" />
+      <path value="$PROJECT_DIR$/vendor/tencentcloud/tencentcloud-sdk-php" />
+      <path value="$PROJECT_DIR$/vendor/danielstjules/stringy" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -197,9 +167,7 @@
     <option name="width" value="1440" />
     <option name="height" value="820" />
   </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -210,89 +178,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="plume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plume" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plume" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plume" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plume" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Oss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plume" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Oss" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plume" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Oss" type="462c0819:PsiDirectoryNode" />
-              <item name="Utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plume" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Oss" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plume" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="Oss" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plume" type="462c0819:PsiDirectoryNode" />
-              <item name="var" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plume" type="462c0819:PsiDirectoryNode" />
-              <item name="var" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plume" type="462c0819:PsiDirectoryNode" />
-              <item name="var" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-              <item name="2019-05-30" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plume" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plume" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plume" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="mp3" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -302,19 +189,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/modules/Oss/Controller" />
-      <recent name="$PROJECT_DIR$/modules/Oss/Utils" />
-      <recent name="$PROJECT_DIR$/web/js/index" />
-      <recent name="$PROJECT_DIR$/modules/Oss/View/index" />
-      <recent name="$PROJECT_DIR$/vendor" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/modules/Oss/Controller" />
-      <recent name="$PROJECT_DIR$/modules/Oss/Utils" />
+      <recent name="$PROJECT_DIR$/modules/App/Utils" />
+      <recent name="$PROJECT_DIR$/modules/App/View/text" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/js/index" />
+      <recent name="$PROJECT_DIR$/vendor/tencentcloud/tencentcloud-sdk-php" />
+      <recent name="$PROJECT_DIR$/modules/App/Utils" />
+      <recent name="$PROJECT_DIR$/modules/App/View/index" />
+      <recent name="$PROJECT_DIR$/modules/App/Controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -329,60 +217,47 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="18a9a6a7-fbed-4044-bb46-a0fc2ec9877f" name="Default" comment="" />
-      <created>1488857055302</created>
+      <changelist id="d24deb3b-2dab-4ed4-9b62-0dfce40cc038" name="Default Changelist" comment="" />
+      <created>1559268514195</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1488857055302</updated>
-      <workItem from="1488857056490" duration="1077000" />
-      <workItem from="1488872300598" duration="4328000" />
-      <workItem from="1558332563012" duration="1316000" />
-      <workItem from="1558340161998" duration="90000" />
-      <workItem from="1558428690684" duration="1169000" />
-      <workItem from="1558431264313" duration="1607000" />
-      <workItem from="1559025583818" duration="703000" />
-      <workItem from="1559026345228" duration="8042000" />
-      <workItem from="1559100073858" duration="1280000" />
-      <workItem from="1559108752943" duration="9106000" />
-      <workItem from="1559181778237" duration="4467000" />
-      <workItem from="1559201314932" duration="4445000" />
+      <updated>1559268514195</updated>
+      <workItem from="1559268515393" duration="1770000" />
+      <workItem from="1559275979093" duration="4000" />
+      <workItem from="1559282603131" duration="4256000" />
+      <workItem from="1559288109867" duration="184000" />
+      <workItem from="1559288357287" duration="2401000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37630000" />
+    <option name="totallyTimeSpent" value="8615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23676682" />
-      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25894135" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32921812" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32967034" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
@@ -392,6 +267,13 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/modules/App/View/layout/layoutP.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/index_dev.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -399,322 +281,168 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/aliyuncs/oss-sdk-php/src/OSS/Core/OssUtil.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Oss/Utils/Page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index/recorder.mp3.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/aliyuncs/oss-sdk-php/samples/Bucket.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/aliyuncs/oss-sdk-php/samples/BucketCors.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/aliyuncs/oss-sdk-php/src/OSS/OssClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-40" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Oss/Utils/AipBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Oss/Utils/AipBCEUtil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Oss/Utils/AipHttpClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Oss/Utils/AipImageUtil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_5.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="1034" column="17" selection-start-line="1034" selection-start-column="17" selection-end-line="1034" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Oss/Utils/AipSpeech.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="91" column="31" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Oss/View/index/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="65" column="19" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index/recorder.wav.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="5" column="3093" selection-end-line="5" selection-end-column="3795" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index/beta-amr-engine.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index/waveview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index/recorder-core.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="53" column="17" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index/beta-amr.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index/beta-ogg-engine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index/beta-webm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index/mp3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index/ios-weixin-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="220" lean-forward="true" selection-start-line="220" selection-end-line="220" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index/app-native-support.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/common/vue.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="5" column="74966" selection-start-line="5" selection-start-column="74966" selection-end-line="5" selection-end-column="74966" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Oss/View/index/audio.phtml.bal">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4480">
-          <caret line="160" column="5" selection-start-line="42" selection-start-column="3" selection-end-line="160" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index/app-ios-weixin-support.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1920">
-          <caret line="33" column="38" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="38" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index/wav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="45" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2576">
-          <caret line="102" column="99" selection-start-line="102" selection-start-column="99" selection-end-line="102" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Oss/View/index/audio.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="91" column="33" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/tencentcloud/tencentcloud-sdk-php/TCloudAutoLoader.php" />
-    <entry file="file://$PROJECT_DIR$/modules/Oss/Controller/SASRsdk.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="161" column="19" selection-start-line="161" selection-start-column="11" selection-end-line="161" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tencentcloud/tencentcloud-sdk-php/src/TencentCloud/Common/Profile/HttpProfile.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/tencentcloud/tencentcloud-sdk-php/src/TencentCloud/Aai/V20180522/Models/SentenceRecognitionRequest.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/tencentcloud/tencentcloud-sdk-php/src/TencentCloud/Aai/V20180522/Models/SentenceRecognitionResponse.php" />
     <entry file="file://$PROJECT_DIR$/vendor/psr/http-message/src/MessageInterface.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/psr/http-message/src/UriInterface.php">
+    <entry file="file://$PROJECT_DIR$/vendor/tencentcloud/tencentcloud-sdk-php/src/TencentCloud/Cvm/V20170312/CvmClient.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/tencentcloud/tencentcloud-sdk-php/src/TencentCloud/Tmt/V20180321/Models/TextTranslateRequest.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/tencentcloud/tencentcloud-sdk-php/src/TencentCloud/Aai/V20180522/AaiClient.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/tencentcloud/tencentcloud-sdk-php/src/TencentCloud/Common/AbstractModel.php" />
+    <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/psr/http-message/src/ServerRequestInterface.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/alibabacloud/sdk/src/NlsFiletrans/V20180817/NlsFiletransApiResolver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1148">
-          <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/alibabacloud/sdk/src/NlsFiletrans/NlsFiletrans.php">
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <caret line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/alibabacloud/client/src/Traits/RegionTrait.php">
+    <entry file="file://$PROJECT_DIR$/modules/App/View/text/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/alibabacloud/client/src/Filter/ClientFilter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/alibabacloud/sdk/src/IdeHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2688">
-          <caret line="96" column="3" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/alibabacloud/client/src/AlibabaCloud.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="112">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Oss/Utils/Config.php">
+    <entry file="file://$PROJECT_DIR$/modules/App/Utils/AipBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/Utils/AipHttpClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/Utils/AipImageUtil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/Utils/b94752ba7d7f55e2e7ca81d9c9701f99">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/Utils/DownloadUtils.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/Utils/Config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="20" />
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/alibabacloud/client/src/Request/Request.php">
+    <entry file="file://$PROJECT_DIR$/modules/App/Utils/Page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1966">
-          <caret line="332" column="20" selection-start-line="332" selection-start-column="20" selection-end-line="332" selection-end-column="20" />
+        <state relative-caret-position="84">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Oss/Controller/IndexController.php">
+    <entry file="file://$PROJECT_DIR$/modules/App/Utils/AipBCEUtil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="100" selection-start-line="100" selection-end-line="101" selection-end-column="33" />
+        <state relative-caret-position="56">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tencentcloud/tencentcloud-sdk-php/composer.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/View/index/audio.phtml.bal">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="146" column="25" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/View/index/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/index/app-ios-weixin-support.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/View/index/audio.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="163" column="38" selection-start-line="163" selection-start-column="38" selection-end-line="163" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/Utils/AipSpeech.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/Utils/Ossupload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="99" column="74" selection-start-line="99" selection-start-column="74" selection-end-line="99" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/Controller/TextController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/Controller/SASRsdk.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/App/Controller/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#34#60#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Oss/View/layout/layoutM.phtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Oss/View/layout/layoutP.phtml">
+    <entry file="file://$PROJECT_DIR$/modules/App/Controller/AudioController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-847" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/var/logs/2019-05-30/Oss-Audio-indexAction.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="79" lean-forward="true" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Oss/Controller/AudioController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="109" column="30" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+        <state relative-caret-position="87">
+          <caret line="94" column="24" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
           <folding>
             <element signature="e#34#71#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>

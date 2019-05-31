@@ -6,7 +6,7 @@ return array(
         'host' => '120.24.187.47',
         'username'=>'root',
         'password'=>'29OiEWly6zI1ZXBcUVk3',
-        'database'=>'hr_db',
+        'database'=>'growth_db',
         'port' => '21011',
         'charset'=>'utf8'
     ),

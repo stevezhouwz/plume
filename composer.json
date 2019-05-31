@@ -2,7 +2,8 @@
   "require": {
     "plumephp/plume": "dev-master",
     "aliyuncs/oss-sdk-php": "~2.0",
-    "alibabacloud/sdk": "^1.6"
+    "alibabacloud/sdk": "^1.6",
+    "tencentcloud/tencentcloud-sdk-php": "3.0.6"
   },
   "autoload": {
     "psr-4": {
