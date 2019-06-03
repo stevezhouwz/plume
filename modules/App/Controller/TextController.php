@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 
+use App\Utils\AipSpeech;
 use Plume\Core\Controller;
 use TencentCloud\Aai\V20180522\AaiClient;
 use TencentCloud\Aai\V20180522\Models\TextToVoiceRequest;
@@ -49,7 +50,7 @@ class TextController extends Controller
     }
 
     /**
-     * 功能：1、文字转语音接口
+     * 功能：1、文字转语音接口(腾讯)
      * @return mixed
      */
     public function audioAction(){
@@ -76,10 +77,17 @@ class TextController extends Controller
             $resp = $client->TextToVoice($req);
             $bae64 = json_decode($resp->toJsonString(),true);
             $src = "data:audio/mp3;base64,".$bae64['Audio'];
-            return $this->result(array('src'=>$src))->json()->response();
+            $content = base64_decode($bae64['Audio']);
+
+            $newfileName = time () . '@' . ".mp3";
+            $path = $_SERVER ['DOCUMENT_ROOT'] . "/upload/mp3/";
+            file_put_contents($path.$newfileName, $content);
+            $fileLink ="https://". $_SERVER['HTTP_HOST'] . "/upload/mp3/" . $newfileName;
+            return $this->result(array('src'=>$fileLink))->json()->response();
         }catch (TencentCloudSDKException $e){
             echo $e;
         }
 
     }
+
 }
